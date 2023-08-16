@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  background-color: #f5f0ec;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-logo,.nav-list-item {
+  padding: 24px;
+  line-height: 150%;
+}
+
+.nav-logo{
+  font-weight: bold;
+}
+.nav-logo span{
+  font-weight: normal;
+}
+
+.offer-item{
+  display: none;
+}
+
+.offer-item-active{
+  display: block;
+}
+
+
+
+.search-btn {
+  border: none;
+}
+
+.intro {
+  height: 737px;
+  background-color: #dcc1ab;
+}
+
+.offer {
+  height: 939px;
+  background-color: #f5f0ec;
+}
+
+.about {
+  height: 720px;
+  background-color: #1b5b31;
+}
+
+.projects {
+  height: 1824px;
+  background-color: #dcc1ab;
+}
+
+.follow {
+  height: 478px;
+  background-color: #f5f0ec;
+}
+
+.footer {
+  height: 399px;
+  background-color: #111111;
+}
