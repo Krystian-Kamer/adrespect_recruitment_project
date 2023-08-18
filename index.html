@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adrespect_project</title>
+    <title>adrespect_recruitment_project</title>
     <script src="https://kit.fontawesome.com/c8b3db4dcb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,34 +22,104 @@
 <body>
 
 
+    <nav class="navbar d-flex justify-content-around sticky-top">
+        <div class="container-fluid mx-5 navbar-expand-lg ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="d-flex navbar-nav">
+                    <li class="nav-item p-1">
+                        <a class="nav-link nav-logo active" aria-current="page" href="#"><span>giard</span>design</a>
+                    </li>
+                </ul>
+                <ul class="d-flex navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-1 dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Oferta <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Oferta 1</a></li>
+                            <li><a class="dropdown-item" href="#">Oferta 2</a></li>
+                            <li><a class="dropdown-item" href="#">Oferta 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">O firmie</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">Realizacje</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="px-3 border-0 rounded d-none" type="search" placeholder="Wyszukaj"
+                        aria-label="Search">
+                    <button class="btn btn-search border-0" type="submit"><img src="icons/handglass.svg"></button>
+                </form>
+            </div>
+        </div>
 
-    <nav class="nav">
-        <a href="#" class="nav-logo">giard<span>design</span>
-        </a>
-        <ul class="nav-list">
-            <li class="nav-list-item offer-list"><a href="#offer">Oferta <i class="fa-solid fa-chevron-down"></i></a>
-                <div class="offer-item">1</div>
-                <div class="offer-item">2</div>
-                <div class="offer-item">3</div>
-                <div class="offer-item">4</div>
-                <div class="offer-item">5</div>
-            </li>
-            <li class="nav-list-item"><a href="#about-company">O firmie</a></li>
-            <li class="nav-list-item"><a href="#projects">Realizacje</a></li>
-            <li class="nav-list-item"><a href="follow">Kontakt</a></li>
-            <button class="nav-list-item search-btn"><img src="icons/handglass.svg"></button>
-        </ul>
+        <div class="collapse navbar-collapse d-flex d-lg-none justify-content-between mx-5">
+            <ul class="d-flex navbar-nav">
+                <li class="nav-item p-1">
+                    <a class="nav-link nav-logo active" aria-current="page" href="#"><span>giard</span>design</a>
+                </li>
+            </ul>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
     </nav>
-
-
-  
 
 
 
     <main class="main">
-        <section class="intro">
-            <i class="fa-solid fa-arrow-left"></i>
-            <i class="fa-solid fa-arrow-right"></i>
+        <section class="intro d-flex">
+            <div class="intro-left-section col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="box py-2 px-5">
+                    <h1 class="mb-5">Nowoczesna aranżacja twojego ogrodu</h1>
+                    <p class="py-3">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
+                        kompleksowy
+                        zakres usług z indywidualnym podejściem do każdego projektu</p>
+
+                    <button type ="button" class="btn btn-success btn-contact my-3">Skontaktuj się z nami</button>
+                    <button type ="button" class="btn btn-outline-success btn-show-projects m-3">Zobacz nasze realizacje <img src="icons/arrow-down.svg"></button>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="intro-right-section col-12 col-lg-6">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/grass1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/grass2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/grass3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="carousel-buttons d-flex justify-content-start">
+                        <button class="carousel-control" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <i class="fa-solid fa-arrow-left p-3"></i>
+                        </button>
+
+                        <button class="carousel-control" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                            <i class="fa-solid fa-arrow-right p-3"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
 
@@ -62,6 +138,10 @@
     <footer class="footer">
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 

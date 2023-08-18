@@ -11,55 +11,62 @@ html {
 }
 
 body {
-  height: 100vh;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  height: 72px;
+.navbar {
   background-color: #f5f0ec;
 }
 
-.nav-list {
-  display: flex;
-  list-style: none;
+.nav-link {
+  color: black;
+  font-size: 14px;
+}
+.nav-logo {
+  font-size: 18px;
 }
 
-.nav-logo,.nav-list-item {
-  padding: 24px;
-  line-height: 150%;
-}
-
-.nav-logo{
+.nav-logo span {
   font-weight: bold;
 }
-.nav-logo span{
-  font-weight: normal;
+
+.btn{
+  border-radius: 15px;
 }
 
-.offer-item{
-  display: none;
-}
-
-.offer-item-active{
-  display: block;
-}
-
-
-
-.search-btn {
-  border: none;
+.btn-search:hover, .carousel-control .fa-solid:hover {
+  transform: scale(1.5);
 }
 
 .intro {
   height: 737px;
   background-color: #dcc1ab;
+}
+
+.intro-right-section {
+  background-color: rgb(153, 0, 255);
+  position: relative;
+}
+
+.carousel-item img {
+  height: 737px;
+  width: 100%;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-control {
+  height: 60px;
+  width: 60px;
+  border: none;
+  color: black;
+  background-color: #f5f0ec;
 }
 
 .offer {
