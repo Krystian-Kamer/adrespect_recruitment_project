@@ -16,6 +16,15 @@ body {
   /* font-family: 'Montserrat', sans-serif; */
 }
 
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .navbar {
   background-color: #f5f0ec;
 }
@@ -32,11 +41,27 @@ body {
   font-weight: bold;
 }
 
+.navbar-toggler{
+  font-size: 20px;
+  width: 60px;
+  height: 40px;
+}
+
+.hidden-list{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #f5f0ec;
+}
+
+
 .btn{
   border-radius: 15px;
 }
 
-.btn-search:hover, .carousel-control .fa-solid:hover {
+.btn-search:hover, .carousel-control .fa-solid:hover, .hidden-list .nav-item:hover {
   transform: scale(1.5);
 }
 
