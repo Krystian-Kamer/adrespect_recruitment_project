@@ -16,12 +16,11 @@ body {
   /* font-family: 'Montserrat', sans-serif; */
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
-  text-decoration: none;
+a {
   color: black;
 }
 
@@ -41,13 +40,13 @@ a{
   font-weight: bold;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   font-size: 20px;
   width: 60px;
   height: 40px;
 }
 
-.hidden-list{
+.hidden-list {
   position: absolute;
   top: 50px;
   left: 0;
@@ -56,17 +55,18 @@ a{
   background-color: #f5f0ec;
 }
 
-
-.btn{
+.btn,
+.card {
   border-radius: 15px;
 }
 
-.btn-search:hover, .carousel-control .fa-solid:hover, .hidden-list .nav-item:hover {
+.btn-search:hover,
+.carousel-control .fa-solid:hover,
+.hidden-list .nav-item:hover{
   transform: scale(1.5);
 }
 
 .intro {
-  height: 737px;
   background-color: #dcc1ab;
 }
 
@@ -95,9 +95,24 @@ a{
 }
 
 .offer {
-  height: 939px;
   background-color: #f5f0ec;
 }
+
+.offer-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.card {
+  border: none;
+  transition: background-color .5s;
+}
+
+.card:hover{
+  background-color: #dcc1ab;
+}
+
+
 
 .about {
   height: 720px;
