@@ -1,12 +1,13 @@
 // ************VARIABLES************
+
 const searchInput = document.querySelector('input');
 const searchBtn = document.querySelector('.btn-search');
 const burgerIcon = document.querySelector('.navbar-toggler span')
 const hiddenList = document.querySelector('.hidden-list')
+
+
+
 // ************FUNCTIONS************
-
-
-
 
 const showSearchInput = (e) => {
   e.preventDefault()
