@@ -135,7 +135,7 @@ a {
   width: 250px;
   padding: 10px;
 }
-.btn-meet-us:hover i{
+.btn-meet-us:hover i {
   color: #1b5b31;
 }
 
@@ -145,42 +145,53 @@ a {
 }
 
 .follow {
-  height: 400px;
   background-color: #f5f0ec;
 }
 
-.follow-box{
+.follow-box {
   color: #f5f0ec;
   background-color: #1b5b31;
-  height: 75%;
-  width: 70%;
 }
 
-
-.btn-instagram{
+.btn-instagram {
   color: #1b5b31;
+  width: 120px;
 }
 
+.btn-contact {
+  width: 200px;
+}
 
 .footer {
   background-color: #111111;
+  color: #f5f0ec;
 }
 
-.footer-middle a{
+.footer-middle a {
   text-decoration: none;
 }
 
-
-
-
-@media (min-width: 280px) and (max-width: 500px) {
+@media (min-width: 250px) and (max-width: 500px) {
   .carousel-item img {
     height: 350px;
   }
 
-  .about-left-side{
+  .about-left-side {
     height: 450px;
   }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+  .footer-right, .footer-left {
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .follow-box {
+ height: 350px;
+}
 }
 
 @media (min-width: 1200px) {
@@ -195,5 +206,9 @@ a {
   .link-offset-3 {
     position: absolute;
     bottom: 20px;
+  }
+
+  .follow-box {
+    width: 50%;
   }
 }
