@@ -149,6 +149,16 @@ a {
   background-color: #f5f0ec;
 }
 
+.follow-box{
+  color: #f5f0ec;
+  background-color: #1b5b31;
+  height: 200px;
+  width: 200px;
+}
+
+
+
+
 .footer {
   background-color: #111111;
   height: 400px;
@@ -157,6 +167,10 @@ a {
 @media (min-width: 280px) and (max-width: 500px) {
   .carousel-item img {
     height: 350px;
+  }
+
+  .about-left-side{
+    height: 450px;
   }
 }
 
