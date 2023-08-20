@@ -4,7 +4,7 @@ const searchInput = document.querySelector('input');
 const searchBtn = document.querySelector('.btn-search');
 const burgerIcon = document.querySelector('.navbar-toggler span')
 const hiddenList = document.querySelector('.hidden-list')
-
+const spanYear = document.querySelector('.current-year span');
 
 
 // ************FUNCTIONS************
@@ -35,8 +35,15 @@ const handleItemList = () => {
   }
 }
 
-
+const getCurrentYear = () => {
+  const currentYear = new Date().getFullYear();
+  spanYear.textContent = ` ${currentYear} `;
+};
+getCurrentYear();
 // ************LISTENERS************
 
 searchBtn.addEventListener('click', showSearchInput);
 burgerIcon.addEventListener('click', handleItemList)
+
+
+

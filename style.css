@@ -135,7 +135,7 @@ a {
   width: 250px;
   padding: 10px;
 }
-.btn-meet-us:hover i {
+.btn-meet-us:hover i{
   color: #1b5b31;
 }
 
@@ -152,17 +152,26 @@ a {
 .follow-box{
   color: #f5f0ec;
   background-color: #1b5b31;
-  height: 200px;
-  width: 200px;
+  height: 75%;
+  width: 70%;
 }
 
 
+.btn-instagram{
+  color: #1b5b31;
+}
 
 
 .footer {
   background-color: #111111;
-  height: 400px;
 }
+
+.footer-middle a{
+  text-decoration: none;
+}
+
+
+
 
 @media (min-width: 280px) and (max-width: 500px) {
   .carousel-item img {
