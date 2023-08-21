@@ -140,8 +140,16 @@ a {
 }
 
 .projects {
-  height: 800px;
   background-color: #dcc1ab;
+}
+
+.grid-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  width: 100%;
 }
 
 .follow {
@@ -171,7 +179,7 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 250px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 575px) {
   .carousel-item img {
     height: 350px;
   }
@@ -180,6 +188,21 @@ a {
     height: 450px;
   }
 }
+
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .grid-item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-item {
+    width: 32%;
+  }
+}
+
 
 @media (min-width: 0px) and (max-width: 992px) {
   .footer-right,
