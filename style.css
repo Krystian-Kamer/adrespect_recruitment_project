@@ -70,21 +70,21 @@ a {
   background-color: #dcc1ab;
 }
 
+.btn-show-projects a {
+  text-decoration: none;
+  color: #1b5b31;
+}
+
+.btn-show-projects a:hover {
+  color: #f5f0ec;
+}
+
 .intro-right-section {
   background-color: rgb(153, 0, 255);
   position: relative;
 }
 
-.carousel-item {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.carousel-item img {
-  height: 550px;
-}
 
 .carousel-buttons {
   position: absolute;
@@ -182,21 +182,21 @@ a {
 }
 
 @media (min-width: 0px) and (max-width: 992px) {
-  .footer-right, .footer-left {
+  .footer-right,
+  .footer-left {
     align-items: center;
   }
 }
 
-
 @media (min-width: 992px) {
   .follow-box {
- height: 350px;
-}
+    height: 350px;
+  }
 }
 
 @media (min-width: 1200px) {
   .carousel-item img {
-    height: 800px;
+    max-height: 900px;
   }
 
   .card {
