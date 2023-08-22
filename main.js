@@ -1,5 +1,3 @@
-// ************VARIABLES************
-
 const searchInput = document.querySelector('input');
 const searchBtn = document.querySelector('.btn-search');
 const burgerIcon = document.querySelector('.navbar-toggler span');
@@ -12,10 +10,7 @@ const buttonMore = document.querySelector('.btn-more');
 const API_KEY = '36233552-776e28d27d3c6ccbd0cd51246';
 let page = 1;
 
-// ************FUNCTIONS************
-
 const showSearchInput = (e) => {
-  c;
   e.preventDefault();
   if (searchInput.classList.contains('d-none')) {
     searchInput.classList.remove('d-none');
@@ -99,10 +94,15 @@ const getCurrentYear = () => {
 };
 getCurrentYear();
 
-// ************LISTENERS************
+const closeBurgerListByClickOnDocument = (e) => {
+  if (!burgerList.contains(e.target) && e.target !== burgerIcon) {
+    closeBurgerList();
+  };
+}
 
 searchBtn.addEventListener('click', showSearchInput);
 burgerIcon.addEventListener('click', handleItemList);
 burgerLinks.forEach((burgerLink) => {
   burgerLink.addEventListener('click', closeBurgerList);
 });
+document.addEventListener('click', closeBurgerListByClickOnDocument)

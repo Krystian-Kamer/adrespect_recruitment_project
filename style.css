@@ -10,10 +10,16 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --beige: #f5f0ec;
+  --brown: #dcc1ab;
+  --green: #1b5b31;
+  --dark: #111111;
+}
+
 body {
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  /* font-family: 'Montserrat', sans-serif; */
 }
 
 ul {
@@ -21,19 +27,62 @@ ul {
 }
 
 a {
-  color: black;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 span {
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar {
-  background-color: #f5f0ec;
+  background-color: var(--beige);
 }
 
 .nav-link {
-  color: black;
+  color: var(--dark);
   font-size: 14px;
 }
+
 .nav-logo {
+  position: relative;
   font-size: 18px;
+}
+
+.nav-logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7%;
+  width: 0;
+  background-color: var(--green);
+  transition: width 0.5s;
+}
+
+.nav-logo:hover::after {
+  width: 100%;
 }
 
 .nav-logo span {
@@ -52,7 +101,11 @@ a {
   left: 0;
   width: 100%;
   align-items: center;
-  background-color: #f5f0ec;
+  background-color: var(--beige);
+}
+
+.hidden-list .nav-item .nav-link{
+  font-size: 20px;
 }
 
 .btn,
@@ -67,24 +120,21 @@ a {
 }
 
 .intro {
-  background-color: #dcc1ab;
+  background-color: var(--brown);
 }
 
 .btn-show-projects a {
   text-decoration: none;
-  color: #1b5b31;
+  color: var(--green);
 }
 
 .btn-show-projects a:hover {
-  color: #f5f0ec;
+  color: var(--beige);
 }
 
 .intro-right-section {
-  background-color: rgb(153, 0, 255);
   position: relative;
 }
-
-
 
 .carousel-buttons {
   position: absolute;
@@ -96,12 +146,12 @@ a {
   height: 60px;
   width: 60px;
   border: none;
-  color: black;
-  background-color: #f5f0ec;
+  color: var(--dark);
+  background-color: var(--beige);
 }
 
 .offer {
-  background-color: #f5f0ec;
+  background-color: var(--beige);
 }
 
 .offer-icon {
@@ -109,18 +159,24 @@ a {
   height: 35px;
 }
 
+.link-offset-3 {
+  position: absolute;
+  bottom: 20px;
+}
+
 .card {
   position: relative;
+  min-height: 250px;
   border: none;
   transition: background-color 0.5s;
 }
 
 .card:hover {
-  background-color: #dcc1ab;
+  background-color: var(--brown);
 }
 
 .about {
-  background-color: #1b5b31;
+  background-color: var(--green);
 }
 
 .about-left-side {
@@ -128,7 +184,7 @@ a {
 }
 
 .about-box {
-  color: rgb(238, 238, 238);
+  color: var(--beige);
 }
 
 .btn-meet-us {
@@ -136,11 +192,15 @@ a {
   padding: 10px;
 }
 .btn-meet-us:hover i {
-  color: #1b5b31;
+  color: var(--green);
 }
 
 .projects {
-  background-color: #dcc1ab;
+  background-color: var(--brown);
+}
+
+.projects p {
+  color: var(--green);
 }
 
 .grid-item {
@@ -153,16 +213,16 @@ a {
 }
 
 .follow {
-  background-color: #f5f0ec;
+  background-color: var(--beige);
 }
 
 .follow-box {
-  color: #f5f0ec;
-  background-color: #1b5b31;
+  color: var(--beige);
+  background-color: var(--green);
 }
 
 .btn-instagram {
-  color: #1b5b31;
+  color: var(--green);
   width: 120px;
 }
 
@@ -171,8 +231,9 @@ a {
 }
 
 .footer {
-  background-color: #111111;
-  color: #f5f0ec;
+  position: relative;
+  background-color: var(--dark);
+  color: var(--beige);
 }
 
 .footer-middle a {
@@ -180,16 +241,10 @@ a {
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
-  .carousel-item img {
-    height: 350px;
-  }
-
   .about-left-side {
     height: 450px;
   }
 }
-
-
 
 @media (min-width: 576px) and (max-width: 991px) {
   .grid-item {
@@ -203,7 +258,6 @@ a {
   }
 }
 
-
 @media (min-width: 0px) and (max-width: 992px) {
   .footer-right,
   .footer-left {
@@ -212,26 +266,22 @@ a {
 }
 
 @media (min-width: 992px) {
+  .carousel-item img {
+    min-height: 500px;
+  }
   .follow-box {
     height: 350px;
+  }
+  .projects h2 {
+    font-size: 50px;
   }
 }
 
 @media (min-width: 1200px) {
-  .carousel-item img {
-    max-height: 900px;
-  }
-
   .card {
     height: 320px;
   }
-
-  .link-offset-3 {
-    position: absolute;
-    bottom: 20px;
-  }
-
   .follow-box {
-    width: 50%;
+    min-width: 50%;
   }
 }
